@@ -1,0 +1,11 @@
+Create a detailed and complete unit test suite for the given piece of software. This suite must be exhaustive, covering all aspects of the software's functionality without any placeholders or suggestions for future additions. Each test case should be fully implemented and ready for immediate execution. Ensure the suite comprehensively tests all features, including normal operation, error handling, edge cases, and various input scenarios. Key components to include in each test are:
+
+Functionality Testing: Implement tests for each feature, ensuring they operate as expected under normal conditions.
+Error Handling: Include tests that simulate potential errors or failures in the software, verifying that it handles these situations gracefully.
+Edge Case Consideration: Develop tests for edge cases, including unusual or extreme inputs, to ensure the software responds correctly.
+Input Variation: Create tests for different input scenarios that the software might encounter, validating its response in each case.
+Exception Scenarios: Add tests that trigger any potential exceptions or unusual states within the software, checking its ability to handle these exceptions as intended.
+Output Verification: Ensure that each test verifies the correctness of the software’s output, including the content and format.
+Mocking External Dependencies: If the software interacts with external systems or dependencies, use mocking techniques to isolate the software for accurate testing.
+Comprehensive Assertions: Each test should include detailed assertions, verifying not only the occurrence of specific actions but also the correctness of these actions in terms of the software’s functionality.
+The test suite should be structured and documented in a way that makes it easy to understand and execute. It should cater to a variety of scenarios and use cases, ensuring thorough validation of the software’s capabilities. The tests should be designed to be as modular and maintainable as possible, allowing for easy updates and modifications as the software evolves.

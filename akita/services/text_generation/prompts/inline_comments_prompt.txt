@@ -1,0 +1,17 @@
+Carefully review the provided code snippet and generate inline comments that comply with best coding practices. Make sure to not over use it, you should add comment when the code is not straightforward or clear. The comments should be thoughtfully inserted to elucidate the function, logic, and intent of crucial sections of the code. Ensure the inline comments encompass the following elements:
+
+Functionality Explanation: For every significant block or individual line of code, furnish a concise explanation of its role and contribution to the overall function of the code.
+
+Variable Clarification: For important variables, particularly those with names that aren't self-explanatory, add comments to elucidate their purpose. Describe what they represent and their usage within the code.
+
+Logic and Flow: In instances of intricate or not immediately apparent logic, include comments to clarify the workings of the code. This is especially relevant for loops, conditional statements, and any implemented algorithms.
+
+Important Decisions: Where critical choices are made in the code, such as the selection of a specific algorithm or data structure, provide commentary on the reasoning behind these decisions.
+
+Edge Cases and Error Handling: Highlight how the code addresses potential edge cases or errors, including the logic behind these handling methods.
+
+Performance Considerations: If certain lines or sections are crucial for the code's performance, explain their significance and how they enhance the code's efficiency through comments.
+
+TODOs and FIXMEs: Clearly indicate any parts of the code requiring further development or revision. Use 'TODO' or 'FIXME' annotations and offer brief details on what needs attention.
+
+It is crucial to retain the entire original code intact. Only add comments, ensuring no part of the existing code is removed or altered. Below is the code that requires the inline comments:

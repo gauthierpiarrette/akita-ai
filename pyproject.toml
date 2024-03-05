@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "akita-ai"
+version = "0.1.0"
+description = "AI-enhanced development tool."
+authors = ["Gauthier Piarrette <gauthier@akita.ai>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://akita.ai"
+repository = "https://github.com/gauthierpiarrette/akita-ai"
+documentation = "https://github.com/gauthierpiarrette/akita-ai"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+openai = "1.10.0"
+rich = "12.6.0"
+langchain = "0.1.9"
+langchain-community = "0.0.24"
+langchain-core = "0.1.26"
+langchain-openai = "0.0.7"
+tiktoken = "0.6.0"
+tree-sitter = "0.20.4"
+tree-sitter-languages = "1.10.2"
+chromadb = "0.4.23"
+onnxruntime = "1.16.0"
+chardet = "5.1.0"
+prompt-toolkit = "3.0.43"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-mock = "^3.6.1"
+black = {version = "^22.3", allow-prereleases = true}
+flake8 = "^3.9.2"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.packages]]
+include = "akita"
+
+[tool.poetry.scripts]
+akita = "akita.cli.cli:main"
+
+[tool.black]
+line-length = 88
+
+[tool.flake8]
+max-line-length = 88
+exclude = [
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+]
+ignore = "E203"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]

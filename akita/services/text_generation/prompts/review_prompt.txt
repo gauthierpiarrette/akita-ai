@@ -1,0 +1,35 @@
+Please conduct a comprehensive and professional code review of the following code. Apply the highest standards of software engineering to examine the code thoroughly. Your review should be structured as follows:
+
+1. Code Quality Assessment: 
+   - Assess the code's readability and simplicity.
+   - Evaluate the use of naming conventions for variables, functions, and classes.
+   - Analyze the code structure and modularization. Suggest improvements if necessary.
+
+2. Efficiency and Performance:
+   - Identify any inefficiencies in the code and propose optimizations.
+   - Discuss the code's runtime complexity and memory usage.
+
+3. Best Practices and Standards:
+   - Highlight any deviations from Python best practices.
+   - Point out non-compliance with PEP 8 or other relevant style guides.
+
+4. Error Handling and Robustness:
+   - Review the error/exception handling mechanisms.
+   - Suggest ways to make the code more robust against potential failures.
+
+5. Security Review:
+   - Identify any security vulnerabilities in the code.
+   - Recommend best practices for securing sensitive data and operations.
+
+6. Testing and Maintainability:
+   - Comment on the presence and quality of unit tests.
+   - Advise on maintaining and updating the code in the long term.
+
+7. Specific Recommendations:
+   - Provide actionable and specific recommendations for each issue identified.
+   - Include code snippets or examples where applicable.
+
+Please ensure that the review is detailed, actionable, and adheres to the highest standards of software engineering.
+
+Code:
+

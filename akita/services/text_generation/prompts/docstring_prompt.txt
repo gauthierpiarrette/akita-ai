@@ -1,0 +1,13 @@
+Examine the provided code snippet and generate a detailed docstring that aligns with best documentation practices, ensuring the inclusion of all key elements. Keep the entire code intact without removing any part. Specifically, the docstring should address the following aspects:
+
+Identification: Discern if the code is a function, method, class, module, or another type of construct, and state this clearly.
+
+Description: Offer a succinct yet thorough explanation of the code element's purpose and its overall functionality.
+
+Parameters/Attributes: For functions or methods, enumerate and describe each parameter, including their intent and data types. For classes or modules, detail the attributes similarly.
+
+Return Values: In the case of functions and methods, elaborate on the type of values they return and the significance of these values.
+
+Exceptions/Error Handling: Identify potential exceptions or error scenarios that may occur, and explain how these are managed or reported within the code.
+
+The goal is to enhance the understanding of the code through a well-structured and informative docstring, without modifying or omitting any portion of the original code. Please ensure that the entire code is preserved as is, with the addition of the docstring. Below is the code that requires the docstring:
