@@ -31,3 +31,6 @@ jobs:
 
     - name: Lint with Flake8
       run: poetry run flake8
+
+    - name: Run pre-commit hooks
+      run: poetry run pre-commit run --all-files
