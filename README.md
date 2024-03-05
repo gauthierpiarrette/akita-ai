@@ -1,5 +1,7 @@
 # Welcome to Akita AI: Your AI-Enhanced Development Tool 🤖
 
+![CI](https://github.com/gauthierpiarrette/akita-ai/workflows/CI/badge.svg)
+
 Akita is a command-line interface designed to streamline your development workflow leveraging the power of AI. From generating docs to offering in-depth code reviews and real time assistance, Akita helps making development faster, smarter, and more efficient.
 
 ## Installation
