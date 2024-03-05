@@ -28,11 +28,5 @@ jobs:
     - name: Run tests with pytest
       run: poetry run pytest
 
-    - name: Check formatting with Black
-      run: poetry run black --check .
-
-    - name: Lint with Flake8
-      run: poetry run flake8
-
     - name: Run pre-commit hooks
       run: poetry run pre-commit run --all-files
