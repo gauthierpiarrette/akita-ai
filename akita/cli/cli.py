@@ -22,7 +22,6 @@ sys.path.insert(0, project_dir)
 
 
 def main():
-
     parser = argparse.ArgumentParser(description="Akita - AI-enhanced development tool")
     subparsers = parser.add_subparsers(dest="command")
 

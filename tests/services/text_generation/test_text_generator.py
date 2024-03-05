@@ -4,6 +4,7 @@ from akita.services.text_generation.text_generator import (
     TextGenerator,
 )
 
+
 # Mock the dependencies and the functions not related to the class directly
 @pytest.fixture(autouse=True)
 def mock_dependencies(mocker):

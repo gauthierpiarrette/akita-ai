@@ -100,7 +100,7 @@ class TerminalChat:
             handling user input.
         """
         with console.status("Thinking...", spinner="dots"):
-                response = await self.qa.ainvoke(user_input)
+            response = await self.qa.ainvoke(user_input)
 
         answer = self.process_answer(response)
         chat_response = f"[blue]Akita:[/blue] {answer}"
