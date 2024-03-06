@@ -3,13 +3,16 @@ from akita.utils.console import console
 from akita.assistant.app_terminal import TerminalChat
 from akita.assistant.config import ENV
 from typing import NoReturn
+import os
 
 
-def run_chainlit_app(
-    repo_path: str, app_directory: str = "akita/assistant"
-) -> NoReturn:
+def run_chainlit_app(repo_path: str) -> NoReturn:
     ENV["REPO_PATH"] = repo_path
     console.log(f"Launching Akita Assistant with repository path: {repo_path}")
+
+    current_file_path = os.path.realpath(__file__)
+    package_root = os.path.dirname(os.path.dirname(current_file_path))
+    app_directory = os.path.join(package_root, "assistant")
 
     try:
         process = subprocess.Popen(
