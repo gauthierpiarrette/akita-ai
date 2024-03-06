@@ -12,7 +12,7 @@ def split_texts(documents: List[Dict[str, Any]]) -> List[str]:
 
     if not texts:
         raise ValueError(
-            f"No content found in the files within the specified repository path"
+            "No content found in the files within the specified repository path"
         )
 
     return texts
