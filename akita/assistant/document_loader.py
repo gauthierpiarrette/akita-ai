@@ -14,4 +14,11 @@ def load_documents() -> List[Dict[str, Any]]:
         exclude=EXCLUDE_PATTERNS,
         parser=LanguageParser(),
     )
-    return loader.load()
+    documents = loader.load()
+
+    if not documents:
+        raise ValueError(
+            f"No file found within the specified repository path: {repo_path}"
+        )
+
+    return documents
