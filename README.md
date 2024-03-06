@@ -17,6 +17,8 @@ Set your OPENAI_API_KEY environment variable:
 export OPENAI_API_KEY=<your-openai-api-key>
 ```
 
+*Note: Requires SQLite > 3.35*
+
 ## 🚀 Quick Example: 
 
 ### Using Akita Assistant for real-time assistance
