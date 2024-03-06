@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "akita-ai"
-version = "0.1.1"
+version = "0.1.101"
 description = "AI-enhanced development tool."
 authors = ["Gauthier Piarrette <gauthier@akita.ai>"]
 license = "Apache-2.0"
