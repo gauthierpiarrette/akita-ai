@@ -7,4 +7,12 @@ def split_texts(documents: List[Dict[str, Any]]) -> List[str]:
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP
     )
-    return splitter.split_documents(documents)
+
+    texts = splitter.split_documents(documents)
+
+    if not texts:
+        raise ValueError(
+            f"No content found in the files within the specified repository path"
+        )
+
+    return texts
