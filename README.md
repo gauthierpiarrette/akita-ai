@@ -4,6 +4,8 @@
 
 Akita is a command-line interface designed to streamline your development workflow leveraging the power of AI. From generating docs to offering in-depth code reviews and real time assistance, Akita helps making development faster, smarter, and more efficient.
 
+[![Intro Video](https://img.youtube.com/vi/Cd49D3M5qlM/maxresdefault.jpg)](https://www.youtube.com/watch?v=Cd49D3M5qlM)
+
 ## Installation
 
 ```bash
