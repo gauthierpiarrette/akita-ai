@@ -1,10 +1,13 @@
-# Welcome to Akita AI: Your AI-Enhanced Development Tool 🤖
+# Welcome to Akita AI: Your AI-Powered Development Tool 🤖
 
-[![CI](https://github.com/gauthierpiarrette/akita-ai/workflows/CI/badge.svg)](https://github.com/gauthierpiarrette/akita-ai/actions?query=workflow:"CI")
+[![PyPI Version](https://img.shields.io/pypi/v/akita-ai.svg)](https://pypi.org/project/akita-ai/)
+[![License](https://img.shields.io/github/license/gauthierpiarrette/akita-ai)](https://github.com/gauthierpiarrette/akita-ai/blob/main/LICENSE)
+[![Python Version](https://img.shields.io/pypi/pyversions/akita-ai.svg)](https://pypi.org/project/akita-ai/)
+[![CI](https://github.com/gauthierpiarrette/akita-ai/workflows/CI/badge.svg)](https://github.com/gauthierpiarrette/akita-ai/actions?query=workflow:%22CI%22)
 
 Akita is a command-line interface designed to streamline your development workflow leveraging the power of AI. From generating docs to offering in-depth code reviews and real time assistance, Akita helps making development faster, smarter, and more efficient.
 
-[![Intro Video](https://img.youtube.com/vi/Cd49D3M5qlM/maxresdefault.jpg)](https://www.youtube.com/watch?v=Cd49D3M5qlM)
+![Akita Screeshot](https://github.com/gauthierpiarrette/akita-ai/assets/28540426/50ef8c7e-fa8c-4b4d-8e25-c36332c13c70)
 
 ## Installation
 
@@ -18,6 +21,10 @@ export OPENAI_API_KEY=<your-openai-api-key>
 ```
 
 *Note: Requires SQLite > 3.35*
+
+## Demo
+
+[![Akita AI Intro](URL_TO_THUMBNAIL_IMAGE)](https://github.com/gauthierpiarrette/akita-ai/assets/28540426/ee6ab200-dd84-4404-b579-9eb004f3b118 "Click to Watch!")
 
 ## 🚀 Quick Example: 
 
