@@ -1,3 +1,5 @@
+<p align="center"><a href="https://github.com/gauthierpiarrette/akita-ai"><img src="https://github.com/gauthierpiarrette/akita-ai/assets/28540426/6029074f-e8f8-423d-8415-a5bd3c255e2c" alt="Akita AI Logo" height="60"/></a></p>
+
 <h1 align="center">Akita AI</h1>
 <p align="center">Your command-line, context-aware chatbot for instant codebase insights.</p>
 <p align="center">
