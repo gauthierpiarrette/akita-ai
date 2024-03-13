@@ -1,11 +1,11 @@
-# Welcome to Akita AI: Your AI-Powered Development Tool 🤖
-
-[![PyPI Version](https://img.shields.io/pypi/v/akita-ai.svg)](https://pypi.org/project/akita-ai/)
-[![License](https://img.shields.io/github/license/gauthierpiarrette/akita-ai)](https://github.com/gauthierpiarrette/akita-ai/blob/main/LICENSE)
-[![Python Version](https://img.shields.io/pypi/pyversions/akita-ai.svg)](https://pypi.org/project/akita-ai/)
-[![CI](https://github.com/gauthierpiarrette/akita-ai/workflows/CI/badge.svg)](https://github.com/gauthierpiarrette/akita-ai/actions?query=workflow:%22CI%22)
-
-Akita is a command-line interface designed to streamline your development workflow leveraging the power of AI. From generating docs to offering in-depth code reviews and real time assistance, Akita helps making development faster, smarter, and more efficient.
+<h1 align="center">Akita AI</h1>
+<p align="center">Your command-line, context-aware chatbot for instant codebase insights.</p>
+<p align="center">
+  <a href="https://pypi.org/project/akita-ai/"><img src="https://img.shields.io/pypi/v/akita-ai.svg" alt="PyPI Version"></a>
+  <a href="https://github.com/gauthierpiarrette/akita-ai/blob/main/LICENSE"><img src="https://img.shields.io/github/license/gauthierpiarrette/akita-ai" alt="License"></a>
+  <a href="https://pypi.org/project/akita-ai/"><img src="https://img.shields.io/pypi/pyversions/akita-ai.svg" alt="Python Version"></a>
+  <a href="https://github.com/gauthierpiarrette/akita-ai/actions?query=workflow:%22CI%22"><img src="https://github.com/gauthierpiarrette/akita-ai/workflows/CI/badge.svg" alt="CI"></a>
+</p>
 
 ![Akita Screeshot](https://github.com/gauthierpiarrette/akita-ai/assets/28540426/50ef8c7e-fa8c-4b4d-8e25-c36332c13c70)
 
