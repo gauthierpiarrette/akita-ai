@@ -9,7 +9,7 @@
   <a href="https://github.com/gauthierpiarrette/akita-ai/actions?query=workflow:%22CI%22"><img src="https://github.com/gauthierpiarrette/akita-ai/workflows/CI/badge.svg" alt="CI"></a>
 </p>
 
-<p align="center"><a href="https://github.com/gauthierpiarrette/akita-ai"><img src="https://github.com/gauthierpiarrette/akita-ai/assets/28540426/37d52939-c2bd-4041-b19c-ac1df7eba835" width="80%"/></a></p><br/>
+<p align="center"><a href="https://github.com/gauthierpiarrette/akita-ai"><img src="https://github.com/gauthierpiarrette/akita-ai/assets/28540426/37d52939-c2bd-4041-b19c-ac1df7eba835" width="70%"/></a></p><br/>
 
 ## Installation
 
