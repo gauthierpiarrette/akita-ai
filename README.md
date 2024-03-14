@@ -9,7 +9,7 @@
   <a href="https://github.com/gauthierpiarrette/akita-ai/actions?query=workflow:%22CI%22"><img src="https://github.com/gauthierpiarrette/akita-ai/workflows/CI/badge.svg" alt="CI"></a>
 </p>
 
-![Akita Screeshot](https://github.com/gauthierpiarrette/akita-ai/assets/28540426/50ef8c7e-fa8c-4b4d-8e25-c36332c13c70)
+<p align="center"><a href="https://github.com/gauthierpiarrette/akita-ai"><img src="https://github.com/gauthierpiarrette/akita-ai/assets/28540426/37d52939-c2bd-4041-b19c-ac1df7eba835" width="80%"/></a></p><br/>
 
 ## Installation
 
@@ -28,12 +28,13 @@ export OPENAI_API_KEY=<your-openai-api-key>
 akita assistant path/to/your/repo
 ```
 
-Run this command to run Akita Assistant, a GPT-like chatbot, for real-time AI suggestions on improving your code. It's accessible directly via the terminal or through a dedicated UI, offering tailored advice to streamline your development workflow.
+Run this command to run Akita Assistant, a GPT-like chatbot, for real-time AI suggestions on improving your code. It's accessible directly via the terminal or through a dedicated UI.
 
 ### Generating a Code Review
 
 ```bash
 akita review your_file.py
+akita review your_file.js your_file.py
 ```
 
 This command reviews `your_file.py`, offering AI-powered insights and improvement suggestions.
