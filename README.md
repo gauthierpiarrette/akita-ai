@@ -15,18 +15,10 @@
 
 ```bash
 pip install akita-ai
-```
-
-Set your OPENAI_API_KEY environment variable:
-```bash
 export OPENAI_API_KEY=<your-openai-api-key>
 ```
 
 *Note: Requires SQLite > 3.35*
-
-## Demo
-
-[![Akita AI Intro](URL_TO_THUMBNAIL_IMAGE)](https://github.com/gauthierpiarrette/akita-ai/assets/28540426/ee6ab200-dd84-4404-b579-9eb004f3b118 "Click to Watch!")
 
 ## 🚀 Quick Example: 
 
