@@ -11,71 +11,63 @@
 
 <p align="center"><a href="https://github.com/gauthierpiarrette/akita-ai"><img src="https://github.com/gauthierpiarrette/akita-ai/assets/28540426/37d52939-c2bd-4041-b19c-ac1df7eba835" width="70%"/></a></p><br/>
 
-## Installation
+## 🌟 Key Features
+
+- **✅ Personal Code Assistant**: Engage with Akita directly from your terminal for real-time codebase insights.
+- **✅ Automated Documentation**: Instantly generate comprehensive documentation for your entire project.
+- **✅ Tailored Code Reviews**: Receive AI-powered suggestions to improve your code quality.
+- **✅ Quick Code Explainer**: Understand any piece of code with a simple command.
+- **✅ Flexible Plugin System**: Customize Akita AI to fit perfectly into your development workflow.
+
+## 🚀 Getting Started
+
+### 1. Installation
+
+Ensure you have Python 3.9+. Open a terminal and run:
 
 ```bash
-pip install akita-ai
-export OPENAI_API_KEY=<your-openai-api-key>
+$ pip install akita-ai
 ```
 
-*Note: Requires SQLite > 3.35*
-
-## 🚀 Quick Example: 
-
-### Using Akita Assistant for real-time assistance
+Set up your OpenAI API key (find it on your [OpenAI](https://openai.com) account):
 
 ```bash
-akita assistant path/to/your/repo
+$ export OPENAI_API_KEY=<your-api-key>
 ```
 
-Run this command to run Akita Assistant, a GPT-like chatbot, for real-time AI suggestions on improving your code. It's accessible directly via the terminal or through a dedicated UI.
+### 2. Engage with Your Personal Code Assistant
 
-### Generating a Code Review
+Start interacting with Akita Assistant for insights:
 
 ```bash
-akita review your_file.py
-akita review your_file.js your_file.py
+$ cd path/to/your/project
+$ akita assistant
 ```
 
-This command reviews `your_file.py`, offering AI-powered insights and improvement suggestions.
+Ask Akita anything about your codebase for instant assistance.
 
-## Core Features
+## Integrations
 
-- **🤖 Interactive AI Chat for Code**: Directly converse with the Akita Assistant, a ChatGPT-like tool tailored for your local codebase. It offers instant, interactive guidance and documentation, making it easier to navigate and understand your projects. Available through both terminal and a specialized UI.
-- **📄 Effortless Documentation Generation**: Automatically create comprehensive READMEs and documentation to enhance code readability and maintainability.
-- **🔍 In-depth Code Reviews**: Receive detailed, constructive reviews with specific suggestions to elevate the quality of your code.
-- **📖 File Explainer**: Instantly uncover the functionality and purpose behind any piece of code, eliminating confusion and streamlining project navigation.
-- **⚙️ Customizable Plugins**: Akita AI features a flexible plugin system, allowing you to tailor its capabilities to fit your unique workflow. Enhance functionality and integrate seamlessly with tools you already use.
+Connect Akita AI with your preferred AI providers for enhanced coding assistance.
 
-## Extensible Plugin System 
+![akita_integration_long](https://github.com/gauthierpiarrette/akita-ai/assets/28540426/19e698f1-cbf0-4745-b833-731d61ee8953)
+*More integrations coming soon.*
 
-- **📝 `Git` Plugin**: Simplify your Git workflow with automated commit message generation. Use this plugin and let Akita AI craft concise, meaningful commit messages based on your code changes, streamlining your version control process.
+## 🔍 Explore More Features
 
-- **🛠️ Your Plugin Here**
+- **Interactive AI Chat**: Direct, contextual assistance for your codebase challenges.
+- **Effortless Documentation**: Automate the creation of readable and comprehensive documentation.
+- **In-depth Code Reviews**: Leverage AI to elevate your code's quality with actionable feedback.
+- **Quick Explainer**: Instantly understand the purpose and functionality behind any piece of code.
 
-## Command Overview
+## 💡 Contributing
 
-Akita AI offers a comprehensive set of commands tailored for various development needs:
+Join our community of contributors! Whether you're fixing bugs, adding features, or improving documentation, your contributions make Akita AI better for everyone. See our [Contributors Guide](CONTRIBUTING.md) for how to get started.
 
-- `add`: Add files for AI processing and analysis.
-- `rm`: Remove files from Akita's scope.
-- `show`: Display stored files or AI-generated content.
-- `init`: Prepare your workspace for Akita AI.
-- `review`, `describe`, `readme`: Generate reviews, descriptions, and READMEs for your code.
-- `assistant`: Invoke the Akita Assistant for interactive AI help.
+## 📢 Feedback and Support
 
-For detailed usage and options, refer to the [Akita CLI Commands Overview](docs/Commands_Documentation.md).
+Your feedback shapes the future of Akita AI. Encounter a bug or have a feature suggestion? Open an issue on our [GitHub issues page](https://github.com/gauthierpiarrette/akita-ai/issues). For more support, contact us through our [homepage](https://akita.ai).
 
-## Contributing
+## 📜 License
 
-Contributions are welcome! Whether it's adding new features, fixing bugs, or improving documentation, your input helps make Akita AI better for everyone.
-
-[Contributors Guide](docs/contributors/README.md)
-
-## Feedback and Support
-
-Encountered a bug? Have suggestions? Let us know through our [GitHub issues page](https://github.com/gauthierpiarrette/akita-ai/issues) or contact us directly via our [homepage](https://akita.ai).
-
-## License
-
-Akita AI is open-source, licensed under the Apache 2.0 license.
+Akita AI is open-source software licensed under the Apache 2.0 License. Feel free to use, modify, and distribute it as per the license.
