@@ -48,7 +48,7 @@ Ask Akita anything about your codebase for instant assistance.
 
 ## Integrations
 
-Connect Akita AI with your preferred AI providers for enhanced coding assistance.
+Connect Akita AI with your preferred providers for enhanced coding assistance.
 
 ![akita_integration_long](https://github.com/gauthierpiarrette/akita-ai/assets/28540426/19e698f1-cbf0-4745-b833-731d61ee8953)
 *More integrations coming soon.*
