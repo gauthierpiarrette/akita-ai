@@ -73,8 +73,8 @@ Dive into the additional features, designed to streamline your development workf
   $ akita rm <file_path>
   ```
 
-### Documentation in a Snap
-**Automatically generate comprehensive documentation** for your selected files, enhancing readability and maintainability.
+### Instant Code Understanding
+**Understand any piece of code with a simple command**, enhancing readability and maintainability.
 
 ```bash
 $ akita describe <file_path>
