@@ -46,7 +46,7 @@ $ akita assistant
 
 Ask Akita anything about your codebase for instant assistance.
 
-## Integrations
+## 🔗 Integrations
 
 Connect Akita AI with your preferred providers for enhanced coding assistance.
 
