@@ -55,10 +55,46 @@ Connect Akita AI with your preferred providers for enhanced coding assistance.
 
 ## 🔍 Explore More Features
 
-- **Interactive AI Chat**: Direct, contextual assistance for your codebase challenges.
-- **Effortless Documentation**: Automate the creation of readable and comprehensive documentation.
-- **In-depth Code Reviews**: Leverage AI to elevate your code's quality with actionable feedback.
-- **Quick Explainer**: Instantly understand the purpose and functionality behind any piece of code.
+Dive into the additional features, designed to streamline your development workflow.
+
+### File Selector
+**Effortlessly select files** for Akita AI's analysis to focus enhancements where you need them.
+
+- **Initiate with Akita**: Prepare your project.
+  ```bash
+  $ akita init
+  ```
+- **Choose Files for Analysis**: Highlight specific files.
+  ```bash
+  $ akita add <file_path>
+  ```
+- **Exclude Files**: Easily remove files from the queue.
+  ```bash
+  $ akita rm <file_path>
+  ```
+
+### Documentation in a Snap
+**Automatically generate comprehensive documentation** for your selected files, enhancing readability and maintainability.
+
+```bash
+$ akita describe <file_path>
+```
+
+### Targeted Code Reviews
+Receive **targeted, AI-driven feedback** on your code to identify improvements quickly.
+
+```bash
+$ akita review <file_path>
+```
+
+### Quick README Creation
+Generate **engaging READMEs** effortlessly, making your projects more accessible and understandable.
+
+```bash
+$ akita readme <file_path>
+```
+
+See our detailed [commands documentation](https://github.com/gauthierpiarrette/akita-ai/blob/main/docs/Commands_Documentation.md) for more details.
 
 ## 💡 Contributing
 
