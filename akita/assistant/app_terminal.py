@@ -4,14 +4,11 @@ from prompt_toolkit import PromptSession
 from rich.panel import Panel
 from prompt_toolkit.styles import Style
 from prompt_toolkit.history import InMemoryHistory
-from akita.assistant.config import MODEL_NAME, SEARCH_TYPE, SEARCH_K, HELP_MESSAGE
-from akita.assistant.document_loader import load_documents
-from akita.assistant.text_splitter import split_texts
-from akita.assistant.database import create_database
-from langchain.memory import ConversationBufferMemory
-from langchain_openai import ChatOpenAI
-from langchain.chains import ConversationalRetrievalChain
-from typing import Dict, Any, List, NoReturn
+from akita.assistant.config import SEARCH_TYPE, SEARCH_K, HELP_MESSAGE
+from akita.assistant.rag_chain import RAGChain
+from akita.api.provider_factory import ProviderFactory
+from typing import NoReturn
+from langchain.schema.runnable import RunnablePassthrough
 
 
 console = Console()
@@ -28,7 +25,7 @@ class TerminalChat:
 
     Attributes:
         session (PromptSession): A prompt session for capturing user input.
-        qa (ConversationalRetrievalChain): The conversational retrieval chain
+        rag_chain (RAGChain): The conversational retrieval chain
             responsible for processing user queries and generating responses.
     """
 
@@ -46,46 +43,21 @@ class TerminalChat:
         Loads documents, splits texts, creates the database, and initializes the
         conversational retrieval chain.
         """
-        documents: List[Dict[str, Any]] = load_documents()
-        texts: List[str] = split_texts(documents)
-        db = create_database(texts)
-        retriever = db.as_retriever(
-            search_type=SEARCH_TYPE, search_kwargs={"k": SEARCH_K}
-        )
-        llm: ChatOpenAI = ChatOpenAI(model_name=MODEL_NAME)
-        memory: ConversationBufferMemory = ConversationBufferMemory(
-            llm=llm,
-            memory_key="chat_history",
-            return_messages=True,
-            output_key="answer",
-        )
-        self.qa: ConversationalRetrievalChain = ConversationalRetrievalChain.from_llm(
-            llm,
-            retriever=retriever,
-            memory=memory,
-            chain_type="stuff",
-            return_source_documents=True,
-        )
+        ai_provider = ProviderFactory.get_provider()
+        self.rag_chain: RunnablePassthrough = RAGChain(
+            ai_provider, SEARCH_TYPE, SEARCH_K
+        ).create_runnable()
 
-    def process_answer(self, response: Dict[str, Any]) -> str:
+    def process_answer(self, response: str) -> str:
         """Processes the response from the QA chain to generate a human-readable answer.
 
         Args:
-            response (Dict[str, Any]): The response from the QA chain.
+            response (str): The response from the QA chain.
 
         Returns:
             str: The processed answer ready to be displayed to the user.
         """
-        answer: str = response["answer"]
-        source_documents: List[Dict[str, Any]] = response.get("source_documents", [])
-        if source_documents:
-            source_info: List[str] = [
-                doc.metadata.get("source", "Unknown Filename")
-                for doc in source_documents
-            ]
-            source_info = list(set(source_info))
-            # answer += f"\n\nSources: {', '.join(source_info)}"
-            # if source_info else "\n\nNo sources found"
+        answer: str = response
         return answer
 
     async def handle_user_input(self, user_input: str) -> NoReturn:
@@ -100,7 +72,7 @@ class TerminalChat:
             handling user input.
         """
         with console.status("Thinking...", spinner="dots"):
-            response = await self.qa.ainvoke(user_input)
+            response = self.rag_chain.invoke(user_input)
 
         answer = self.process_answer(response)
         chat_response = f"[blue]Akita:[/blue] {answer}"
@@ -120,7 +92,7 @@ class TerminalChat:
         console.print("Welcome to the Akita Assistant!", style="blue")
         self.display_help()
 
-        loop = asyncio.get_event_loop()  # Get the existing event loop
+        loop = asyncio.get_event_loop()
 
         while True:
             try:
