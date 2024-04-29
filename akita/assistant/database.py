@@ -1,7 +1,6 @@
 from langchain_community.vectorstores import Chroma
-from langchain_openai import OpenAIEmbeddings
-from typing import List
+from typing import List, Callable
 
 
-def create_database(texts: List[str]) -> Chroma:
-    return Chroma.from_documents(texts, OpenAIEmbeddings(disallowed_special=()))
+def create_database(texts: List[str], embeddings_provider: Callable) -> Chroma:
+    return Chroma.from_documents(documents=texts, embedding=embeddings_provider)
