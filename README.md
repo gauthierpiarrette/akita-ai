@@ -29,12 +29,14 @@ Ensure you have Python 3.9+. Open a terminal and run:
 $ pip install akita-ai
 ```
 
-Set up your OpenAI API key (find it on your [OpenAI](https://openai.com) account):
-
+Set up your provider API key (currently integrates with [Gemini](https://gemini.google.com) and [ChatGPT](https://chat.openai.com)):
+```bash
+$ export GOOGLE_API_KEY=<your-api-key>
+```
+Alternatively to use with ChatGPT
 ```bash
 $ export OPENAI_API_KEY=<your-api-key>
 ```
-
 ### 2. Engage with Your Personal Code Assistant
 
 Start interacting with Akita Assistant for insights:
@@ -50,7 +52,7 @@ Ask Akita anything about your codebase for instant assistance.
 
 Connect Akita AI with your preferred providers for enhanced coding assistance.
 
-![akita_integration_long](https://github.com/gauthierpiarrette/akita-ai/assets/28540426/19e698f1-cbf0-4745-b833-731d61ee8953)
+![akita_integration_long](https://github.com/gauthierpiarrette/akita-ai/assets/28540426/17c0aae7-b470-4a6a-83dc-645c60bdc405)
 *More integrations coming soon.*
 
 ## 🔍 Explore More Features
