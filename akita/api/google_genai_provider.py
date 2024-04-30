@@ -12,7 +12,8 @@ class GoogleGenAIProvider(AIProvider):
         api_key = api_key or os.getenv("GOOGLE_API_KEY")
         if not api_key:
             raise ValueError(
-                "API key is not provided. Please set the GOOGLE_GENAI_API_KEY environment variable."
+                "API key is not provided. \
+                Please set the GOOGLE_GENAI_API_KEY environment variable."
             )
         if not model_name:
             raise ValueError("Model name is required but was not provided.")
