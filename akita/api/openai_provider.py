@@ -15,7 +15,8 @@ class OpenAIProvider(AIProvider):
             api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise ValueError(
-                "API key is required for OpenAIProvider. Please set the OPENAI_API_KEY environment variable."
+                "API key is required for OpenAIProvider. \
+                Please set the OPENAI_API_KEY environment variable."
             )
         if not model_name:
             raise ValueError("Model name is required but was not provided.")
