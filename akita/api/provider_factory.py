@@ -19,7 +19,8 @@ class ProviderFactory:
         provider_name, provider_config = ConfigLoader.get_provider_config(provider)
         if provider_name not in ProviderFactory._providers:
             raise ValueError(
-                f"Unsupported AI client type '{provider_name}'. Available types: {list(ProviderFactory._providers.keys())}"
+                f"Unsupported AI client type '{provider_name}'. \
+                Available types: {list(ProviderFactory._providers.keys())}"
             )
 
         api_key_env = provider_config.get("api_key_env")
