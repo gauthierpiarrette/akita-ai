@@ -13,16 +13,19 @@ from langchain.callbacks.base import BaseCallbackHandler
 
 class RAGChain:
     """
-    Class encapsulating the Retrieval-Augmented Generation (RAG) chain setup for processing and answering questions.
+    Class encapsulating the RAG chain setup for processing and answering questions.
     """
 
     def __init__(self, provider: AIProvider, search_type: str, search_k: int):
         """
-        Initializes the RAGChain with necessary components for document retrieval and processing.
+        Initializes the RAGChain with necessary
+        components for document retrieval and processing.
 
         Args:
-            provider (Any): AI provider capable of providing embeddings and language models.
-            search_type (str): Type of search to perform, determines the retrieval strategy.
+            provider (Any): AI provider capable of providing embeddings
+                            and language models.
+            search_type (str): Type of search to perform,
+                               determines the retrieval strategy.
             search_k (int): Number of top documents to retrieve for processing.
         """
         self.documents: List[Dict[str, Any]] = load_documents()
@@ -42,12 +45,15 @@ class RAGChain:
 
     def create_runnable(self) -> RunnablePassthrough:
         """
-        Creates a runnable for the chat system to process and respond to user queries using retrieved context.
+        Creates a runnable for the chat system to process and
+        respond to user queries using retrieved context.
 
         Returns:
-            RunnablePassthrough: Configured runnable chain that processes queries based on the retrieved context.
+            RunnablePassthrough: Configured runnable chain that
+            processes queries based on the retrieved context.
         """
-        template = "Answer the question based only on the following context:\n\n{context}\n\nQuestion: {question}"
+        template = "Answer the question based only on the following context:\
+                    \n\n{context}\n\nQuestion: {question}"
         prompt = ChatPromptTemplate.from_template(template)
 
         def format_docs(docs: List[Dict[str, Any]]) -> str:
@@ -55,7 +61,8 @@ class RAGChain:
             Formats documents into a single string.
 
             Args:
-                docs (List[Dict[str, Any]]): Documents to format, each represented as a dictionary.
+                docs (List[Dict[str, Any]]): Documents to format,
+                each represented as a dictionary.
 
             Returns:
                 str: Formatted documents.
@@ -71,7 +78,8 @@ class RAGChain:
 
     class PostMessageHandler(BaseCallbackHandler):
         """
-        Custom callback handler to manage post-retrieval operations and append results to the Chainlit message.
+        Custom callback handler to manage post-retrieval operations
+        and append results to the Chainlit message.
 
         Attributes:
             msg (cl.Message): Chainlit message object to append results.
