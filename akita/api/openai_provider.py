@@ -11,11 +11,10 @@ class OpenAIProvider(AIProvider):
     def __init__(
         self, api_key: Optional[str] = None, model_name: str = "gpt-4-0125-preview"
     ):
-        if not api_key:
-            api_key = os.getenv("OPENAI_API_KEY")
+        api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise ValueError(
-                "API key is required for OpenAIProvider. \
+                "API key is not provided. \
                 Please set the OPENAI_API_KEY environment variable."
             )
         if not model_name:
